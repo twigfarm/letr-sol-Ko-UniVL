@@ -1,0 +1,6 @@
+torch==1.10.2
+tqdm
+boto3
+requests
+pandas
+pickle5
