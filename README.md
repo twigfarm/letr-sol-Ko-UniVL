@@ -31,7 +31,7 @@ BertTokenizer가 사용되는 부분을 KoBertTokenizer로 수정하고 KoBertTo
 
 
 ## 학습 과정
-<img src="imgs/training process.JPG">
+<img src="assets/imgs/training process.JPG">
 생성된 캡션들은 "KoUniVL/ckpts/ckpt_dataname_caption" 경로의 `hyp.txt` 파일로 확인할 수 있습니다.  
 생성된 캡션들에 대한 정답 문장은 동일한 경로의 `ref.txt` 파일에서 확인할 수 있습니다. 
 
