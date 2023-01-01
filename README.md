@@ -40,6 +40,7 @@ BertTokenizer가 사용되는 부분을 KoBertTokenizer로 수정하고 KoBertTo
 `*Window 환경에서의 충돌이 존재할 수 있습니다. Rinux 환경을 권장합니다.*`
 - Rinux(Ubuntu) 
 - Tesla V100
+- CUDA 11.4
 
 
 
@@ -55,7 +56,7 @@ BertTokenizer가 사용되는 부분을 KoBertTokenizer로 수정하고 KoBertTo
 ```
 conda create -n py_univl python=3.6.9 tqdm boto3 requests pandas pickle5
 conda activate py_univl
-pip install torch==1.10.2+cu102
+pip install torch==1.10.2
 pip install git+https://github.com/Maluuba/nlg-eval.git@master
 ```
 #### KoBERT model download
