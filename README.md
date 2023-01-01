@@ -62,7 +62,7 @@ pip install git+https://github.com/Maluuba/nlg-eval.git@master
 ```
 mkdir modules
 cd modules
-wget https://github.com/twigfarm/Ko-UniVL/releases/download/v0/
+wget https://github.com/twigfarm/Ko-UniVL/releases/download/v0/koBERT.zip
 unzip koBERT.zip
 cd ..
 ```
@@ -103,7 +103,7 @@ git pull origin master
 - 다운로드
 ```
 mkdir -p ./weight
-wget -P ./weight https://github.com/twigfarm/Ko-UniVL/releases/download/v0/kounivl.pretrained.bin
+wget -P ./weight https://github.com/twigfarm/Ko-UniVL/releases/download/v0/pytorch_model.bin.pretrain.49
 ```
 
 
@@ -157,7 +157,7 @@ wget -P ./weight https://github.com/microsoft/UniVL/releases/download/v0/univl.p
 
 ## Pretraining Process for Korean HowTo100M dataset
 한국어 HowTo100M 데이터셋 사전 학습 과정(제공된 weight 미사용 버전)
-`직접 전처리 및 사전 학습 진행 시 진행 과정입니다.`
+`직접 데이터 전처리 및 사전 학습 진행 시 진행 과정입니다.`
 
 #### Requirements
 - `HowTo100m.csv` : video id와 feature file을 column으로 갖는 csv file
