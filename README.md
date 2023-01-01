@@ -61,9 +61,8 @@ pip install git+https://github.com/Maluuba/nlg-eval.git@master
 ```
 #### KoBERT model download
 ```
-mkdir modules
 cd modules
-wget https://github.com/twigfarm/Ko-UniVL/releases/download/v0/koBERT.zip
+wget https://github.com/twigfarm/letr-sol-Ko-UniVL/releases/download/v0/koBERT.zip
 unzip koBERT.zip
 cd ..
 ```
@@ -104,7 +103,7 @@ git pull origin master
 - 다운로드
 ```
 mkdir -p ./weight
-wget -P ./weight https://github.com/twigfarm/Ko-UniVL/releases/download/v0/pytorch_model.bin.pretrain.49
+wget -P ./weight https://github.com/twigfarm/letr-sol-Ko-UniVL/releases/download/v0/pytorch_model.bin.pretrain.49
 ```
 
 
@@ -127,7 +126,7 @@ wget -P ./weight https://github.com/twigfarm/Ko-UniVL/releases/download/v0/pytor
 ```
 mkdir -p data
 cd data
-wget https://github.com/twigfarm/Ko-UniVL/releases/download/v0/youcookii.zip
+wget https://github.com/twigfarm/letr-sol-Ko-UniVL/releases/download/v0/youcookii.zip
 unzip youcookii.zip
 cd ..
 ```
@@ -139,7 +138,7 @@ cd ..
 ```
 mkdir -p data
 cd data
-wget https://github.com/twigfarm/Ko-UniVL/releases/download/v0/msrvtt.zip
+wget https://github.com/twigfarm/letr-sol-Ko-UniVL/releases/download/v0/msrvtt.zip
 unzip msrvtt.zip
 cd ..
 ```
