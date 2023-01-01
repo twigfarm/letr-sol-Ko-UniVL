@@ -54,7 +54,6 @@ PRETRAINED_VOCAB_POSITIONAL_EMBEDDINGS_SIZE_MAP = {
     'koBERT' : 512,
 }
 VOCAB_NAME = 'vocab.txt'
-# VOCAB_NAME = 'kobert_news_wiki_ko_cased-1087f8699e.spiece'
 
 def load_vocab(vocab_file):
     """Loads a vocabulary file into a dictionary."""

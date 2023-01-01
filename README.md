@@ -58,12 +58,15 @@ conda create -n py_univl python=3.6.9 tqdm boto3 requests pandas pickle5
 conda activate py_univl
 pip install torch==1.10.2
 pip install git+https://github.com/Maluuba/nlg-eval.git@master
+pip install transformers
+pip install sentencepiece
 ```
 #### KoBERT model download
 ```
 cd modules
 wget https://github.com/twigfarm/letr-sol-Ko-UniVL/releases/download/v0/koBERT.zip
 unzip koBERT.zip
+rm koBERT.zip
 cd ..
 ```
 #### Tokenizer download 
@@ -73,6 +76,7 @@ git config core.sparseCheckout true
 git remote add -f origin https://github.com/monologg/KoBERT-Transformers.git
 echo "kobert_transformers/*" >> .git/info/sparse-checkout
 git pull origin master
+git remote remove origin
 ```
 
 
@@ -128,6 +132,7 @@ mkdir -p data
 cd data
 wget https://github.com/twigfarm/letr-sol-Ko-UniVL/releases/download/v0/youcookii.zip
 unzip youcookii.zip
+rm youcookii.zip
 cd ..
 ```
 
@@ -140,6 +145,7 @@ mkdir -p data
 cd data
 wget https://github.com/twigfarm/letr-sol-Ko-UniVL/releases/download/v0/msrvtt.zip
 unzip msrvtt.zip
+rm msrvtt.zip
 cd ..
 ```
 
@@ -156,7 +162,7 @@ wget -P ./weight https://github.com/microsoft/UniVL/releases/download/v0/univl.p
 
 
 ## Pretraining Process for Korean HowTo100M dataset
-한국어 HowTo100M 데이터셋 사전 학습 과정(제공된 weight 미사용 버전)
+한국어 HowTo100M 데이터셋 사전 학습 과정(제공된 weight 미사용 버전)  
 `직접 데이터 전처리 및 사전 학습 진행 시 진행 과정입니다.`
 
 #### Requirements

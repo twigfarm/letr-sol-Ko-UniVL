@@ -48,9 +48,6 @@ PRETRAINED_MODEL_ARCHIVE_MAP = {
     'koBERT' : "/home/vicap/sol3_workspace/sol3gw_univl/.cache/kobert_v1.zip"
 }
 
-# CONFIG_NAME = 'bert_config.json'
-# WEIGHTS_NAME = 'pytorch_model.bin'
-
 CONFIG_NAME = 'kobert_config.json'
 WEIGHTS_NAME = 'kobert_pytorch_model.bin'
 
